@@ -15,6 +15,7 @@
   "author": "Gourin Maison",
   "license": "ISC",
   "dependencies": {
+    "handlebars": "^4.0.10",
     "bundlebars": "^1.2.0",
     "front-matter": "^2.2.0",
     "markdown-it": "^8.4.0",
