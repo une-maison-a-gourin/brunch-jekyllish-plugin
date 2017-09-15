@@ -12,8 +12,8 @@ const md = require('markdown-it')({
 
 class BundlebarsCompiler {
   constructor(config) {
-    if (config.plugins) {
-      this.config = config.plugins.BundlebarsCompiler;
+    if (config.plugins && config.plugins['brunch-jekyllish-plugin']) {
+      this.config = config.plugins['brunch-jekyllish-plugin'];
     } else {
       this.config = {
         partialsDir: './app/assets/pages/partials',
