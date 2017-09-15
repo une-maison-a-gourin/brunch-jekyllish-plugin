@@ -1,5 +1,5 @@
 {
-  "name": "bundlebars-brunch",
+  "name": "brunch-jekyllish-plugin",
   "version": "0.0.1",
   "description": "Simple tiny Brunch.io plugin to compile assets with bundlebar.",
   "main": "index.js",

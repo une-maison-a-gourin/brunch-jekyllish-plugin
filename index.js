@@ -14,16 +14,17 @@ class BundlebarsCompiler {
   constructor(config) {
     if (config.plugins) {
       this.config = config.plugins.BundlebarsCompiler;
+    } else {
+      this.config = {
+        partialsDir: './app/assets/pages/partials',
+        partialsExt: '.html',
+        helpersDir: './app/assets/pages/helpers',
+        templatesDir: './app/assets/pages/templates',
+        compilerOptions: {
+          noEscape: true,
+        },
+      };
     }
-    this.config = {
-      partialsDir: './app/assets/pages/partials',
-      partialsExt: '.html',
-      helpersDir: './app/assets/pages/helpers',
-      templatesDir: './app/assets/pages/templates',
-      compilerOptions: {
-        noEscape: true,
-      },
-    };
     this.bundlebars = new Bundlebars(this.config);
   }
 
