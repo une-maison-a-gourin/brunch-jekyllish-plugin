@@ -12,14 +12,14 @@ const md = require('markdown-it')({
 
 class BundlebarsCompiler {
   constructor(config) {
-    if (config.plugins && config.plugins.jekyllish) {
+    if (config.plugins) {
       this.config = config.plugins.jekyllish;
     } else {
       this.config = {
-        partialsDir: './app/assets/pages/partials',
+        partialsDir: './app/partials',
         partialsExt: '.html',
-        helpersDir: './app/assets/pages/helpers',
-        templatesDir: './app/assets/pages/templates',
+        helpersDir: './app/helpers',
+        templatesDir: './app/templates',
         compilerOptions: {
           noEscape: true,
         },
