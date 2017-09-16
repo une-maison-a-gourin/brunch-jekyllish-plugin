@@ -1,25 +1,26 @@
 {
   "name": "jekyllish",
   "version": "0.0.1",
-  "description": "Simple tiny Brunch.io plugin to compile assets with (soon to be forked) bundlebar module",
+  "description": "Simple tiny Brunch.io plugin to compile assets with handlebars module from markdown with yaml headings. As a novice at javascript this is a non-sophisticated module.",
   "main": "index.js",
   "scripts": {
     "test": "eslint index.js && mocha"
   },
   "keywords": [
     "brunch",
-    "bundlebars",
     "handlebars",
+    "yaml",
+    "markdown-it",
     "plugin"
   ],
   "author": "Gourin Maison",
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.0.10",
-    "bundlebars": "^1.2.0",
     "front-matter": "^2.2.0",
     "markdown-it": "^8.4.0",
-    "into-stream": "^3.1.0"
+    "into-stream": "^3.1.0",
+    "globby": "^6.1.0"
   },
   "devDependencies": {
     "chai": "^3",

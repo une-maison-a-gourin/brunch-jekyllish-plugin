@@ -27,6 +27,7 @@ describe('Plugin', () => {
 
     // Test
     return plugin.compileStatic({data: testData, path: testFilePath}).then(got => {
+      console.log(got);
       expect(got).to.equal(expected);
     }, error => expect("Got " + got + " " + error).not.to.be.ok);
   });
