@@ -1,7 +1,7 @@
 {
-  "name": "jekyllish",
+  "name": "jekyllish-brunch",
   "version": "0.0.1",
-  "description": "Simple tiny Brunch.io plugin to compile assets with handlebars module from markdown with yaml headings. As a novice at javascript this is a non-sophisticated module.",
+  "description": "Simple tiny Brunch.io plugin to compile assets with handlebars module from markdown-it with yaml headings. As a novice at javascript this is a non-sophisticated module.",
   "main": "index.js",
   "scripts": {
     "test": "eslint index.js && mocha"
